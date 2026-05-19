@@ -5,22 +5,6 @@
     {"id": "ripple",          "symbol": "xrp",  "name": "XRP"},
     {"id": "grin",            "symbol": "grin", "name": "Grin"}
   ],
-  "cmc_watchlist": [
-    {"id": "ripple",          "symbol": "xrp",  "name": "XRP"},
-    {"id": "solana",          "symbol": "sol",  "name": "Solana"},
-    {"id": "bitcoin-cash",    "symbol": "bch",  "name": "Bitcoin Cash"},
-    {"id": "monero",          "symbol": "xmr",  "name": "Monero"},
-    {"id": "toncoin",         "symbol": "ton",  "name": "Toncoin"},
-    {"id": "sui",             "symbol": "sui",  "name": "Sui"},
-    {"id": "bittensor",       "symbol": "tao",  "name": "Bittensor"},
-    {"id": "sky",             "symbol": "sky",  "name": "Sky"},
-    {"id": "pi",              "symbol": "pi",   "name": "Pi"},
-    {"id": "bitcoin-cash-sv", "symbol": "bsv",  "name": "Bitcoin SV"},
-    {"id": "ecash",           "symbol": "xec",  "name": "eCash"},
-    {"id": "qubic",           "symbol": "qubic","name": "Qubic"},
-    {"id": "zigcoin",         "symbol": "zig",  "name": "ZIGChain"},
-    {"id": "grin",            "symbol": "grin", "name": "Grin"}
-  ],
   "broad": [
     {"id": "bitcoin",         "symbol": "btc",  "name": "Bitcoin"},
     {"id": "ethereum",        "symbol": "eth",  "name": "Ethereum"},
@@ -33,6 +17,14 @@
     {"id": "ondo-finance",    "symbol": "ondo", "name": "Ondo Finance"},
     {"id": "bonfida",         "symbol": "fida", "name": "Bonfida"},
     {"id": "pudgy-penguins",  "symbol": "pengu","name": "Pudgy Penguins"},
-    {"id": "the-open-network","symbol": "ton",  "name": "Toncoin"}
-  ]
+    {"id": "the-open-network","symbol": "ton",  "name": "Toncoin"},
+    {"id": "sui",             "symbol": "sui",  "name": "Sui"},
+    {"id": "bittensor",       "symbol": "tao",  "name": "Bittensor"},
+    {"id": "pi",              "symbol": "pi",   "name": "Pi"},
+    {"id": "ecash",           "symbol": "xec",  "name": "eCash"},
+    {"id": "qubic",           "symbol": "qubic","name": "Qubic"},
+    {"id": "zigchain",        "symbol": "zig",  "name": "ZIGChain"},
+    {"id": "sky",             "symbol": "sky",  "name": "Sky"}
+  ],
+  "new_tokens": []
 }
