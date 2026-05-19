@@ -1,0 +1,2202 @@
+{
+  "timestamp": "2026-05-19T15:17:24.324862",
+  "gainers": [
+    {
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "change": 6.039999961853027,
+      "price": 47.78886623573061
+    },
+    {
+      "name": "Zcash",
+      "symbol": "ZEC",
+      "change": 5.039999961853027,
+      "price": 557.1023092330296
+    },
+    {
+      "name": "Monero",
+      "symbol": "XMR",
+      "change": 2.680000066757202,
+      "price": 390.71179026796864
+    },
+    {
+      "name": "Toncoin",
+      "symbol": "TON",
+      "change": 1.7999999523162842,
+      "price": 1.9680796530315066
+    },
+    {
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "change": 0.6700000166893005,
+      "price": 9.496769832870024
+    }
+  ],
+  "losers": [
+    {
+      "name": "Stellar",
+      "symbol": "XLM",
+      "change": -1.2100000381469727,
+      "price": 0.14452724909233636
+    },
+    {
+      "name": "Canton Network",
+      "symbol": "CC",
+      "change": -1.1699999570846558,
+      "price": 0.14824768433227078
+    },
+    {
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "change": -1.0399999618530273,
+      "price": 365.5288071720892
+    },
+    {
+      "name": "XRP",
+      "symbol": "XRP",
+      "change": -0.6800000071525574,
+      "price": 1.3683242587542281
+    },
+    {
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "change": -0.5,
+      "price": 0.10349226266619173
+    }
+  ],
+  "signals": [
+    {
+      "coin": "sui",
+      "strategy": "9_harmonic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 88
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "9_harmonic",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 88
+    },
+    {
+      "coin": "solana",
+      "strategy": "9_harmonic",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 88
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 85
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "monero",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "monero",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 85
+    },
+    {
+      "coin": "ripple",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "ripple",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 85
+    },
+    {
+      "coin": "ripple",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 85
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 85
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 85
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 85
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 80
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 80
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 80
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 80
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 80
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 80
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 80
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 80
+    },
+    {
+      "coin": "monero",
+      "strategy": "18_stat_arb",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 79
+    },
+    {
+      "coin": "monero",
+      "strategy": "18_stat_arb",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 79
+    },
+    {
+      "coin": "sui",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "sui",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "sui",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "sui",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 75
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 75
+    },
+    {
+      "coin": "monero",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "monero",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "monero",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 75
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "ripple",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "ripple",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 75
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 75
+    },
+    {
+      "coin": "solana",
+      "strategy": "2_dow",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 75
+    },
+    {
+      "coin": "solana",
+      "strategy": "2_dow",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 75
+    },
+    {
+      "coin": "monero",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 74
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 74
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 72
+    },
+    {
+      "coin": "solana",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 71
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "sui",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "sui",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "monero",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 70
+    },
+    {
+      "coin": "monero",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "ripple",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 70
+    },
+    {
+      "coin": "ripple",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 70
+    },
+    {
+      "coin": "solana",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 70
+    },
+    {
+      "coin": "monero",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 69
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 69
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 69
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 68
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 68
+    },
+    {
+      "coin": "monero",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 67
+    },
+    {
+      "coin": "monero",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 66
+    },
+    {
+      "coin": "ripple",
+      "strategy": "13_level2",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 66
+    },
+    {
+      "coin": "sui",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 65
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 65
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "monero",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 65
+    },
+    {
+      "coin": "monero",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 65
+    },
+    {
+      "coin": "monero",
+      "strategy": "1_wyckoff",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "monero",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "ripple",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 65
+    },
+    {
+      "coin": "ripple",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 65
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 65
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 65
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 65
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 65
+    },
+    {
+      "coin": "solana",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 65
+    },
+    {
+      "coin": "solana",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 65
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 64
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 64
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 64
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 64
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 64
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 64
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "11_algo_ml",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 64
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 63
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 63
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 63
+    },
+    {
+      "coin": "sui",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 62
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 62
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 62
+    },
+    {
+      "coin": "monero",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 62
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 62
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 62
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 62
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "13_level2",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 62
+    },
+    {
+      "coin": "solana",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 62
+    },
+    {
+      "coin": "solana",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 62
+    },
+    {
+      "coin": "sui",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 61
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 61
+    },
+    {
+      "coin": "sui",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 61
+    },
+    {
+      "coin": "sui",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 61
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 61
+    },
+    {
+      "coin": "sui",
+      "strategy": "7_vsa",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "14_auction_market",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "7_vsa",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "14_auction_market",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "11_algo_ml",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "14_auction_market",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "16_onchain",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "16_onchain",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "14_auction_market",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "7_vsa",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "7_vsa",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "14_auction_market",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "7_vsa",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "1_wyckoff",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "7_vsa",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "10_supply_demand",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "solana",
+      "strategy": "14_auction_market",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 60
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 59
+    },
+    {
+      "coin": "sui",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 59
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 59
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 59
+    },
+    {
+      "coin": "monero",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 59
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 59
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 59
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 59
+    },
+    {
+      "coin": "solana",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 59
+    },
+    {
+      "coin": "solana",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 59
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 58
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "20_orderblock",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 58
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 58
+    },
+    {
+      "coin": "sui",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 57
+    },
+    {
+      "coin": "ripple",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 57
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 57
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 57
+    },
+    {
+      "coin": "solana",
+      "strategy": "20_orderblock",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 57
+    },
+    {
+      "coin": "sui",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 56
+    },
+    {
+      "coin": "ripple",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 56
+    },
+    {
+      "coin": "sui",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "sui",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "sui",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "sui",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "sui",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "sui",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "monero",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "4_gann",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "4_gann",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "ripple",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "8_smc",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "21_renko",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "11_algo_ml",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "8_smc",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "12_liquidity",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "21_renko",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 55
+    },
+    {
+      "coin": "solana",
+      "strategy": "5_market_profile",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 55
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 54
+    },
+    {
+      "coin": "solana",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 53
+    },
+    {
+      "coin": "sui",
+      "strategy": "12_liquidity",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 51
+    },
+    {
+      "coin": "monero",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 51
+    },
+    {
+      "coin": "sui",
+      "strategy": "14_auction_market",
+      "direction": "NEUTRAL",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "sui",
+      "strategy": "17_cyclic",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "sui",
+      "strategy": "16_onchain",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "sui",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "14_auction_market",
+      "direction": "NEUTRAL",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "17_cyclic",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "16_onchain",
+      "direction": "LONG",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "toncoin",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "monero",
+      "strategy": "17_cyclic",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 50
+    },
+    {
+      "coin": "monero",
+      "strategy": "19_sentiment",
+      "direction": "LONG",
+      "timeframe": "1h",
+      "confidence": 50
+    },
+    {
+      "coin": "monero",
+      "strategy": "16_onchain",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "monero",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "monero",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "ripple",
+      "strategy": "11_algo_ml",
+      "direction": "LONG",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "ripple",
+      "strategy": "14_auction_market",
+      "direction": "NEUTRAL",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "ripple",
+      "strategy": "16_onchain",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "ripple",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "14_auction_market",
+      "direction": "NEUTRAL",
+      "timeframe": "1h",
+      "confidence": 50
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "16_onchain",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "15_intermarket",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "ethereum",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "22_momentum_meanrev",
+      "direction": "SHORT",
+      "timeframe": "1h",
+      "confidence": 50
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "14_auction_market",
+      "direction": "NEUTRAL",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "16_onchain",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "bitcoin",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "solana",
+      "strategy": "14_auction_market",
+      "direction": "NEUTRAL",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "solana",
+      "strategy": "16_onchain",
+      "direction": "SHORT",
+      "timeframe": "4h",
+      "confidence": 50
+    },
+    {
+      "coin": "solana",
+      "strategy": "15_intermarket",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    },
+    {
+      "coin": "solana",
+      "strategy": "17_cyclic",
+      "direction": "SHORT",
+      "timeframe": "1d",
+      "confidence": 50
+    }
+  ],
+  "summary": {
+    "total": 304,
+    "longs": 112,
+    "shorts": 186
+  }
+}
