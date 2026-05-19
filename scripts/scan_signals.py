@@ -77,9 +77,18 @@ def run():
     print("\n🌍 GLOBAL MARKET:")
     try:
         g = fetch_global_data()
-        print(f"  BTC: ${g.get('bitcoin', {}).get('usd', '?'):>8}")
-        print(f"  ETH: ${g.get('ethereum', {}).get('usd', '?'):>8}")
-        print(f"  Mkt Cap: ${g.get('total_market_cap', {}).get('usd', 0)/1e12:.2f}T")
+        total_mcap = g.get("total_market_cap", {}).get("usd", 0) / 1e12
+        btc_price = g.get("bitcoin", {}).get("usd", "?")
+        btc_change = g.get("bitcoin", {}).get("usd_24h_change")
+        eth_price = g.get("ethereum", {}).get("usd", "?")
+        eth_change = g.get("ethereum", {}).get("usd_24h_change")
+        btc_str = f"${btc_price}" if btc_price != "?" else "?"
+        eth_str = f"${eth_price}" if eth_price != "?" else "?"
+        btc_chg = f"{btc_change:+.2f}%" if btc_change else ""
+        eth_chg = f"{eth_change:+.2f}%" if eth_change else ""
+        print(f"  BTC: {btc_str:>8} {btc_chg}")
+        print(f"  ETH: {eth_str:>8} {eth_chg}")
+        print(f"  Mkt Cap: ${total_mcap:.2f}T")
     except:
         pass
 

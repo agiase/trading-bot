@@ -127,7 +127,7 @@ def fetch_trending():
     } for c in data[:10]]
 
 def fetch_global_data():
-    """Fetch global market data."""
+    """Fetch global market data and BTC/ETH prices."""
     import requests, time
     time.sleep(0.5)
     r = requests.get("https://api.coingecko.com/api/v3/global", timeout=10)
@@ -136,7 +136,10 @@ def fetch_global_data():
         r = requests.get("https://api.coingecko.com/api/v3/global", timeout=10)
     if r.status_code != 200:
         return {}
-    return r.json().get("data", {})
+    result = r.json().get("data", {})
+    # Add BTC/ETH prices via separate call
+    price_data = fetch_current_price("bitcoin,ethereum")
+    return result | price_data
 
 # --- Symbol lookup ---
 def symbol_for(coin_id):
