@@ -1,0 +1,23 @@
+{
+  "primary": [
+    {"id": "monero",         "symbol": "xmr",  "name": "Monero"},
+    {"id": "bitcoin-cash-sv","symbol": "bsv",  "name": "Bitcoin SV"},
+    {"id": "ripple",         "symbol": "xrp",  "name": "XRP"},
+    {"id": "grin",           "symbol": "grin", "name": "Grin"}
+  ],
+  "broad": [
+    {"id": "bitcoin",         "symbol": "btc",  "name": "Bitcoin"},
+    {"id": "ethereum",        "symbol": "eth",  "name": "Ethereum"},
+    {"id": "hyperliquid",     "symbol": "hype", "name": "Hyperliquid"},
+    {"id": "solana",          "symbol": "sol",  "name": "Solana"},
+    {"id": "zcash",           "symbol": "zec",  "name": "Zcash"},
+    {"id": "litecoin",        "symbol": "ltc",  "name": "Litecoin"},
+    {"id": "polkadot",        "symbol": "dot",  "name": "Polkadot"},
+    {"id": "chainlink",       "symbol": "link", "name": "Chainlink"},
+    {"id": "ondo-finance",    "symbol": "ondo", "name": "Ondo Finance"},
+    {"id": "bonfida",         "symbol": "fida", "name": "Bonfida"},
+    {"id": "pudgy-penguins",  "symbol": "pengu","name": "Pudgy Penguins"},
+    {"id": "the-open-network","symbol": "ton",  "name": "Toncoin"}
+  ],
+  "new_tokens": []
+}
