@@ -1,66 +1,101 @@
 """
-CoinGecko data fetcher — multi-ticker, multi-timeframe with rate limiting
+Data fetcher — uses ccxt to fetch real OHLCV from exchanges (no rate limits, includes volume)
 """
-import time
-import requests
+import ccxt
 import pandas as pd
 import numpy as np
 from datetime import datetime, timezone
 
-COINGECKO_BASE = "https://api.coingecko.com/api/v3"
-_last_call = 0
+# CoinGecko -> exchange symbol mapping
+EXCHANGE = ccxt.binance()  # Free, no API key needed for public data
 
-def _rate_limit(delay=1.5):
-    """Ensure minimum delay between API calls."""
-    global _last_call
-    elapsed = time.time() - _last_call
-    if elapsed < delay:
-        time.sleep(delay - elapsed)
-    _last_call = time.time()
+# CoinGecko ID -> ccxt symbol mapping
+COINGECKO_TO_SYMBOL = {
+    # Primary watchlist
+    "monero":           "XMR/USDT",
+    "bitcoin-cash-sv":  "BSV/USDT",
+    "ripple":           "XRP/USDT",
+    "grin":             None,  # Not on Binance
+    # Broad watchlist
+    "bitcoin":          "BTC/USDT",
+    "ethereum":         "ETH/USDT",
+    "hyperliquid":      None,  # Not on Binance
+    "solana":           "SOL/USDT",
+    "zcash":            "ZEC/USDT",
+    "litecoin":         "LTC/USDT",
+    "polkadot":         "DOT/USDT",
+    "chainlink":        "LINK/USDT",
+    "ondo-finance":     None,  # Not on Binance
+    "bonfida":          None,  # Not on Binance
+    "pudgy-penguins":   None,  # Not on Binance
+    "the-open-network": None,  # Not on Binance
+}
 
-def fetch_ohlcv(coin_id, vs_currency="usd", days=14):
-    """Fetch OHLCV data from CoinGecko with rate limiting."""
-    _rate_limit()
-    url = f"{COINGECKO_BASE}/coins/{coin_id}/ohlc"
-    params = {"vs_currency": vs_currency, "days": days}
+def fetch_ohlcv(coin_id, symbol=None, timeframe="1h", limit=336):
+    """Fetch OHLCV from exchange via ccxt. Falls back to CoinGecko for unsupported coins."""
+    if symbol:
+        try:
+            candles = EXCHANGE.fetch_ohlcv(symbol, timeframe=timeframe, limit=limit)
+            df = pd.DataFrame(candles, columns=["timestamp", "Open", "High", "Low", "Close", "Volume"])
+            df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
+            df.set_index("timestamp", inplace=True)
+            return df
+        except Exception as e:
+            print(f"  Exchange error for {symbol}: {e}")
+
+    # Fallback: try CoinGecko (no volume, limited)
+    return _fetch_coingecko_ohlcv(coin_id)
+
+def _fetch_coingecko_ohlcv(coin_id, days=14):
+    """Fallback: CoinGecko OHLC (no volume column)."""
+    import requests, time
+    url = f"https://api.coingecko.com/api/v3/coins/{coin_id}/ohlc"
+    params = {"vs_currency": "usd", "days": days}
     r = requests.get(url, params=params, timeout=15)
     if r.status_code == 429:
-        # CoinGecko rate limit exceeded; wait and retry once
-        print(f"  429 on {coin_id}, waiting 5s...")
-        time.sleep(5)
+        print(f"  429 on {coin_id} (CG), waiting 10s...")
+        time.sleep(10)
         r = requests.get(url, params=params, timeout=15)
-    r.raise_for_status()
+    if r.status_code != 200:
+        return None
     data = r.json()
-    df = pd.DataFrame(data, columns=["timestamp", "open", "high", "low", "close"])
+    # CoinGecko OHLC returns: [timestamp, open, high, low, close] — NO volume
+    df = pd.DataFrame(data, columns=["timestamp", "Open", "High", "Low", "Close"])
+    df["Volume"] = 0  # dummy volume
     df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
     df.set_index("timestamp", inplace=True)
-    df.columns = [c.capitalize() for c in df.columns]
     return df
 
+# --- CoinGecko helpers for price/trending (these work fine) ---
+
 def fetch_current_price(coin_id, vs_currency="usd"):
-    """Fetch current price and 24h change."""
-    _rate_limit()
-    url = f"{COINGECKO_BASE}/simple/price"
+    """Fetch current price and 24h change from CoinGecko."""
+    import requests, time
+    url = "https://api.coingecko.com/api/v3/simple/price"
     params = {"ids": coin_id, "vs_currencies": vs_currency,
-              "include_24hr_change": "true", "include_market_cap": "true"}
+              "include_24hr_change": "true"}
+    time.sleep(0.5)
     r = requests.get(url, params=params, timeout=10)
     if r.status_code == 429:
         time.sleep(5)
         r = requests.get(url, params=params, timeout=10)
-    r.raise_for_status()
+    if r.status_code != 200:
+        return {}
     return r.json()
 
 def fetch_top_gainers(limit=10):
-    """Fetch top gainers via /coins/markets sorted by 24h change."""
-    _rate_limit()
-    url = f"{COINGECKO_BASE}/coins/markets"
+    """Fetch top gainers via CoinGecko."""
+    import requests, time
+    url = "https://api.coingecko.com/api/v3/coins/markets"
     params = {"vs_currency": "usd", "order": "volume_desc",
               "per_page": 250, "page": 1, "sparkline": "false"}
+    time.sleep(0.5)
     r = requests.get(url, params=params, timeout=15)
     if r.status_code == 429:
-        time.sleep(5)
+        time.sleep(10)
         r = requests.get(url, params=params, timeout=15)
-    r.raise_for_status()
+    if r.status_code != 200:
+        return []
     coins = r.json()
     coins_sorted = sorted(coins, key=lambda c: c.get("price_change_percentage_24h", 0) or 0, reverse=True)
     return [{
@@ -75,32 +110,39 @@ def fetch_top_gainers(limit=10):
 
 def fetch_trending():
     """Fetch trending coins from CoinGecko."""
-    _rate_limit()
-    r = requests.get(f"{COINGECKO_BASE}/search/trending", timeout=10)
+    import requests, time
+    time.sleep(0.5)
+    r = requests.get("https://api.coingecko.com/api/v3/search/trending", timeout=10)
     if r.status_code == 429:
-        time.sleep(5)
-        r = requests.get(f"{COINGECKO_BASE}/search/trending", timeout=10)
-    r.raise_for_status()
+        time.sleep(10)
+        r = requests.get("https://api.coingecko.com/api/v3/search/trending", timeout=10)
+    if r.status_code != 200:
+        return []
     data = r.json().get("coins", [])
     return [{
         "id": c["item"]["id"],
         "symbol": c["item"]["symbol"].upper(),
         "name": c["item"]["name"],
         "market_cap_rank": c["item"].get("market_cap_rank"),
-        "price_btc": c["item"].get("price_btc"),
     } for c in data[:10]]
 
 def fetch_global_data():
     """Fetch global market data."""
-    _rate_limit()
-    r = requests.get(f"{COINGECKO_BASE}/global", timeout=10)
+    import requests, time
+    time.sleep(0.5)
+    r = requests.get("https://api.coingecko.com/api/v3/global", timeout=10)
     if r.status_code == 429:
-        time.sleep(5)
-        r = requests.get(f"{COINGECKO_BASE}/global", timeout=10)
-    r.raise_for_status()
-    return r.json()["data"]
+        time.sleep(10)
+        r = requests.get("https://api.coingecko.com/api/v3/global", timeout=10)
+    if r.status_code != 200:
+        return {}
+    return r.json().get("data", {})
 
-if __name__ == "__main__":
-    top = fetch_top_gainers(5)
-    for c in top:
-        print(f"{c['name']} ({c['symbol']}): ${c['price']:.4f} | {c['change_24h']:+.2f}%")
+# --- Symbol lookup ---
+def symbol_for(coin_id):
+    """Get ccxt symbol for a coin_id, or None."""
+    return COINGECKO_TO_SYMBOL.get(coin_id)
+
+def has_exchange_data(coin_id):
+    """Check if we can fetch OHLCV with volume from exchange."""
+    return COINGECKO_TO_SYMBOL.get(coin_id) is not None

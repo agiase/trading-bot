@@ -29,14 +29,32 @@ MAX_DRAWDOWN_PCT = float(os.getenv("MAX_DRAWDOWN_PCT", "15.0"))
 COINGECKO_API = "https://api.coingecko.com/api/v3"
 DEFAULT_TIMEFRAMES = ["1h", "4h", "1d"]
 DEFAULT_LIMIT = 200  # candles
+OHLC_DAYS = 14  # Valid: 1, 7, 14, 30, 90, 180, 365, max
 
 # --- Signals ---
 SIGNAL_INTERVAL_HOURS = int(os.getenv("SIGNAL_INTERVAL_HOURS", "6"))
 
-# --- Watchlist ---
-WATCHLIST = [
-    "monero", "bitcoin-cash", "ripple", "grin",
-    "bitcoin", "ethereum", "hyperliquid", "solana",
-    "zcash", "litecoin", "polkadot", "chainlink",
-    "pudgy-penguins", "ondo-finance", "bonfida",
+# --- Watchlist (CoinGecko IDs) ---
+PRIMARY_WATCHLIST = [
+    "monero",          # XMR
+    "bitcoin-cash-sv", # BSV
+    "ripple",          # XRP
+    "grin",            # GRIN
 ]
+
+BROAD_WATCHLIST = [
+    "bitcoin",
+    "ethereum",
+    "hyperliquid",
+    "solana",
+    "zcash",
+    "litecoin",
+    "polkadot",
+    "chainlink",
+    "ondo-finance",
+    "bonfida",
+    "pudgy-penguins",
+    "the-open-network",
+]
+
+WATCHLIST = PRIMARY_WATCHLIST + BROAD_WATCHLIST

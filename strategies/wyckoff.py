@@ -80,7 +80,8 @@ class WyckoffDetector:
         sos_break = test_segment[test_segment["Close"] > ar_high * 0.995]
         sos_valid = len(sos_break) > 0
 
-        if not sc_valid:
+        # Skip if no valid spring or SOS after a decent rally
+        if not st_valid and not spring and not sos_valid:
             return None, 0
 
         # --- Score ---

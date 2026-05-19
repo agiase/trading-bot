@@ -1,9 +1,9 @@
 {
   "primary": [
-    {"id": "monero",         "symbol": "xmr",  "name": "Monero"},
-    {"id": "bitcoin-cash-sv","symbol": "bsv",  "name": "Bitcoin SV"},
-    {"id": "ripple",         "symbol": "xrp",  "name": "XRP"},
-    {"id": "grin",           "symbol": "grin", "name": "Grin"}
+    {"id": "monero",          "symbol": "xmr",  "name": "Monero"},
+    {"id": "bitcoin-cash-sv", "symbol": "bsv",  "name": "Bitcoin SV"},
+    {"id": "ripple",          "symbol": "xrp",  "name": "XRP"},
+    {"id": "grin",            "symbol": "grin", "name": "Grin"}
   ],
   "broad": [
     {"id": "bitcoin",         "symbol": "btc",  "name": "Bitcoin"},

@@ -7,7 +7,8 @@ sys.path.insert(0, "/workspace/trading-bot")
 
 import config.settings as cfg
 from exchange.data_fetcher import (
-    fetch_top_gainers, fetch_trending, fetch_current_price, fetch_global_data
+    fetch_top_gainers, fetch_trending, fetch_current_price, fetch_global_data,
+    fetch_ohlcv, symbol_for, has_exchange_data
 )
 from strategies.engine import StrategyEngine
 
@@ -58,7 +59,8 @@ def run():
     engine = StrategyEngine()
     for coin_id in watchlist_ids:
         try:
-            sigs = engine.analyze_ticker(coin_id, coin_id[:4], days=21)
+            sym = symbol_for(coin_id)
+            sigs = engine.analyze_ticker(coin_id, coin_id[:4], exchange_symbol=sym, days=14)
             for s in sigs:
                 conf = s.get("confidence", 0)
                 if conf >= 50:
@@ -67,7 +69,9 @@ def run():
                     rl = s.get("range_low", 0)
                     print(f"  {dir_icon} {coin_id:<15} {s['direction']:<6} conf={conf:.0f}  range=${rl:.2f}–${rh:.2f}")
         except Exception as e:
-            print(f"  ⚠️  {coin_id}: {e}")
+            err = str(e)
+            if "429" not in err and "400" not in err:
+                print(f"  ⚠️  {coin_id}: {err}")
 
     # 5. Global Data
     print("\n🌍 GLOBAL MARKET:")
